@@ -15,13 +15,13 @@ Pod::Spec.new do |s|
     s.social_media_url   = "http://twitter.com/aferodev"
     s.ios.deployment_target = "11.0"
     #s.osx.deployment_target = "10.11"
-    s.source       = { :git => "git@github.com:aferodeveloper/AferoSwiftSDK.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/ffantasy94/AferoSwiftSDK.git", :tag => "#{s.version}" }
 
     s.default_subspecs = 'Core'
 
     s.subspec 'Core' do |ss|
         ss.source_files  = "AferoSwiftSDK/Core/**/*"
-        ss.dependency 'AferoSofthub', '~> 1.8.4'
+        ss.dependency 'AferoSofthub', '~> 1.9.0'
         ss.dependency 'CocoaLumberjack/Swift', '~> 3.8.0'
         ss.dependency 'CryptoSwift', '1.5.1'
         ss.dependency 'CocoaZ', '~> 1.4'
